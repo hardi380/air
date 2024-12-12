@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/air/catkin_ws/devel/setup.sh
