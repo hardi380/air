@@ -24,7 +24,7 @@ def logic(pub):
         rospy.loginfo("No valid dist value received yet.")
 
 def translate():
-    rospy.init_node('listener', anonymous=True)
+    rospy.init_node('us_listener', anonymous=True)
     pub = rospy.Publisher('motor_cmd', String, queue_size=10)
     rospy.Subscriber("dist", String, callback)
     rate = rospy.Rate(10)  # 10 Hz
